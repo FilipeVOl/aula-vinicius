@@ -44,9 +44,9 @@ export default function Login() {
   return (
     <main>
       <div className="h-[100vh] w-full bg-gradient-radial from-blue-400 to-blue-800 flex justify-center items-center">
-        <div className="bg-white p-8 rounded-lg shadow-lg h-[30%] w-[30%] text-black">
-          <form onSubmit={handleSubmit}>
-            <h1 className="my-4 text-5xl font-bold text-center">Login</h1>
+        <div className="bg-white p-8 rounded-lg shadow-lg h-[23rem] w-[30%] text-black">
+          <form className="flex flex-col h-auto" onSubmit={handleSubmit}>
+            <h1 className=" text-5xl font-bold text-center">Login</h1>
             <div className="">
               <label
                 htmlFor="email"
@@ -79,16 +79,16 @@ export default function Login() {
                 className="mt-1 mb-8 p-2 border border-gray-300 block w-full rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               />
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-row justify-center gap-4">
               <button
                 type="submit"
-                className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-[20%]"
+                className="mt-4 bg-blue-500 h-[3rem] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-[5rem]"
               >
                 Entrar
               </button>
-              <Link className="w-[20%]" href="/cadastro">
-                <button className="mt-4 w-full bg-gray-300 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                  Cadastre-se
+              <Link className="w-[7rem]" href="/cadastro">
+                <button className="mt-4 w-full h-[3rem] bg-gray-300 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                  Cadastrar
                 </button>
               </Link>
             </div>

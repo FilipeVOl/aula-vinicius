@@ -35,7 +35,7 @@ export default function Cadastro() {
 
   return (
     <div className="h-[100vh] w-full bg-gradient-radial from-blue-400 to-blue-800 flex justify-center items-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg h-[40%] w-[30%] text-black">
+      <div className="bg-white p-8 rounded-lg shadow-lg h-[35rem] w-[40rem] text-black">
         <form onSubmit={handleSubmit}>
           <h1 className="text-5xl font-bold text-center my-8">Cadastro</h1>
           <div className="mt-4">
